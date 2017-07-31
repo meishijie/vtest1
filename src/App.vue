@@ -1,33 +1,8 @@
 <template>
   <div id="app">
-    <div class="navbar navbar-default navbar-fixed-top" >
-    <div class="container">
-      <div class="navbar-header" style="height:80px;">
-        <button class="navbar-toggle collapsed " style="margin-top:25px;" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand hidden-sm" style="padding:0; margin:0; margin-left:20px;" href="" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-首页'])"><img src="../static/img/m/logo.jpg" /></a>
-        <div class="am-fl " style="line-height:24px;margin-top:30px;margin-left:100px; font-weight:bold;">Stock Code : 833031 </div>
-      </div>
-      <div class="navbar-collapse collapse" role="navigation">
-        <ul class="nav navbar-nav">
-          <li class="hidden-sm hidden-md"><a href="http://v2.bootcss.com/" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'v2doc'])">Bootstrap2中文文档</a></li>
-          <li><a href="http://v3.bootcss.com/" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'v3doc'])">Bootstrap3中文文档</a></li>
-          <li><a href="http://v4.bootcss.com/" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'v4doc'])">Bootstrap 4.0 预览</a></li>
-          <li><a href="/p/lesscss/" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'less'])">Less 教程</a></li>
-          <li><a href="http://www.jquery123.com/" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'jquery'])">jQuery API</a></li>
-          <li><a href="http://expo.bootcss.com" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'expo'])">网站实例</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right hidden-sm">
-          <li><a href="/about/" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'about'])">关于</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <router-view></router-view>
+    <naver></naver>
+    <router-view></router-view>
+    <footers></footers>
   </div>
 </template>
 
@@ -40,5 +15,75 @@ export default {
 <style>
 #app {
   margin-top: 100px;
+}
+.btn_detail {
+    font-size: 20px;
+    width: 100%;
+    border: 1px #0085D8 solid;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #ECF8FF;
+}
+.detailPageTitle p {
+    margin-top: 20px;
+    color: #000000;
+    text-align: left;
+    font-size: 20px;
+}
+.detailPageTitle {
+    margin-top: 40px;
+    font-family: "Helvetica";
+    font-size: 25px;
+    color: #0085D8;
+    padding: 20px;
+}
+.part-title {
+    text-align: center;
+    position: relative;
+}
+.part-title-mar {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.projects-header {
+    width: 60%;
+    text-align: center;
+    margin: 60px 0 10px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.smallNav{
+  padding-left: 0;
+}
+.smallNav a{
+  color: #000;
+}
+.smallNavText{
+  color: #999999;
+}
+.breadcrumb-box {
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
 }
 </style>

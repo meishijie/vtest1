@@ -3,16 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Naver from '@/components/Naver'
+import Footers from '@/components/Footer'
 import './assets/css/bootstrap.min.css'
 import './assets/js/bootstrap.min.js'
 
 
 Vue.config.productionTip = false
-
-/* eslint-disable no-new */
+Vue.component('footers', Footers)
+Vue.component('naver', Naver)
+    /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App }
+    el: '#app',
+    router,
+    template: '<App/>',
+    components: { App }
 })
